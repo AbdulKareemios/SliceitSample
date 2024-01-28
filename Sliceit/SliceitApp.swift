@@ -14,7 +14,8 @@ struct SliceitApp: App {
     }
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
+                
         }
     }
 }

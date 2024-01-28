@@ -21,6 +21,21 @@ enum HTTPMethod: String {
     case post
 }
 
+struct LocalizedAlertError: LocalizedError {
+    let underlyingError: LocalizedError
+    var errorDescription: String? {
+        underlyingError.errorDescription
+    }
+    var recoverySuggestion: String? {
+        underlyingError.recoverySuggestion
+    }
+
+    init?(error: APIError?) {
+        guard let localizedError = error as? LocalizedError else { return nil }
+        underlyingError = localizedError
+    }
+}
+
 class APIRequest<Model: Codable> {
     
     static func call(
