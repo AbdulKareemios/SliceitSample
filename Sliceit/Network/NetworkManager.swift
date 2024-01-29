@@ -36,7 +36,7 @@ struct LocalizedAlertError: LocalizedError {
     }
 }
 
-class APIRequest<Model: Codable> {
+class APIRequest<Parameters: Codable, Model: Codable> {
     
     static func call(
     
@@ -46,7 +46,7 @@ class APIRequest<Model: Codable> {
         method: HTTPMethod,
         authorized: Bool = false,
         queryItems: [URLQueryItem]? = nil,
-        //parameters: Parameters? = nil,
+        parameters: Parameters? = nil,
         completion: @escaping CompletionHandler,
         failure: @escaping FailureHandler
     ) {
@@ -76,9 +76,9 @@ class APIRequest<Model: Codable> {
         
         
         
-//        if let parameters = parameters {
-//            request.httpBody = try? JSONEncoder().encode(parameters)
-//        }
+        if let parameters = parameters {
+            request.httpBody = try? JSONEncoder().encode(parameters)
+        }
     
         if authorized, let token = Auth.shared.getAccessToken() {
             request.addValue("Bearer \(token)", forHTTPHeaderField: "Authorization")

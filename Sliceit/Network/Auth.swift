@@ -30,7 +30,10 @@ class Auth: ObservableObject {
         keychain.set(accessToken, forKey: KeychainKey.accessToken.rawValue)
         keychain.set(refreshToken, forKey: KeychainKey.refreshToken.rawValue)
         
-        loggedIn = true
+        DispatchQueue.main.async {
+            self.loggedIn = true
+        }
+        
     }
     
     func hasAccessToken() -> Bool {

@@ -21,6 +21,14 @@
 		412A211B2B66BFBC008D13A1 /* AboutUsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412A211A2B66BFBC008D13A1 /* AboutUsView.swift */; };
 		412A211E2B66C27D008D13A1 /* ButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412A211D2B66C27D008D13A1 /* ButtonModifier.swift */; };
 		412A21212B66F1FE008D13A1 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412A21202B66F1FE008D13A1 /* ViewExtension.swift */; };
+		412A21232B6705AB008D13A1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412A21222B6705AB008D13A1 /* LoginView.swift */; };
+		412A21252B670B81008D13A1 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412A21242B670B81008D13A1 /* LoginViewModel.swift */; };
+		412A21272B670BCF008D13A1 /* LoginAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412A21262B670BCF008D13A1 /* LoginAction.swift */; };
+		412A21292B670C28008D13A1 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412A21282B670C28008D13A1 /* LoginResponse.swift */; };
+		412A212B2B670C34008D13A1 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412A212A2B670C34008D13A1 /* LoginRequest.swift */; };
+		412A212D2B671F3E008D13A1 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412A212C2B671F3E008D13A1 /* ProfileView.swift */; };
+		412A212F2B672110008D13A1 /* RootScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412A212E2B672110008D13A1 /* RootScreen.swift */; };
+		412A21312B674C21008D13A1 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412A21302B674C21008D13A1 /* StringExtension.swift */; };
 		41E783612B644ADA00328604 /* SliceitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E783602B644ADA00328604 /* SliceitApp.swift */; };
 		41E783632B644ADA00328604 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E783622B644ADA00328604 /* HomeView.swift */; };
 		41E783652B644ADC00328604 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41E783642B644ADC00328604 /* Assets.xcassets */; };
@@ -42,6 +50,14 @@
 		412A211A2B66BFBC008D13A1 /* AboutUsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsView.swift; sourceTree = "<group>"; };
 		412A211D2B66C27D008D13A1 /* ButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonModifier.swift; sourceTree = "<group>"; };
 		412A21202B66F1FE008D13A1 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		412A21222B6705AB008D13A1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		412A21242B670B81008D13A1 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		412A21262B670BCF008D13A1 /* LoginAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAction.swift; sourceTree = "<group>"; };
+		412A21282B670C28008D13A1 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		412A212A2B670C34008D13A1 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		412A212C2B671F3E008D13A1 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		412A212E2B672110008D13A1 /* RootScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootScreen.swift; sourceTree = "<group>"; };
+		412A21302B674C21008D13A1 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		41E7835D2B644ADA00328604 /* Sliceit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sliceit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41E783602B644ADA00328604 /* SliceitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliceitApp.swift; sourceTree = "<group>"; };
 		41E783622B644ADA00328604 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -67,6 +83,7 @@
 				412A20F72B6637EB008D13A1 /* About */,
 				412A20F22B663743008D13A1 /* Login */,
 				412A20E92B663575008D13A1 /* Profile */,
+				412A212E2B672110008D13A1 /* RootScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -103,6 +120,7 @@
 		412A20EB2B663592008D13A1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				412A212C2B671F3E008D13A1 /* ProfileView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -164,6 +182,7 @@
 		412A20F32B66374B008D13A1 /* Actions */ = {
 			isa = PBXGroup;
 			children = (
+				412A21262B670BCF008D13A1 /* LoginAction.swift */,
 			);
 			path = Actions;
 			sourceTree = "<group>";
@@ -171,6 +190,7 @@
 		412A20F42B663755008D13A1 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				412A21242B670B81008D13A1 /* LoginViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -178,6 +198,7 @@
 		412A20F52B66375D008D13A1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				412A21222B6705AB008D13A1 /* LoginView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -185,6 +206,8 @@
 		412A20F62B663763008D13A1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				412A21282B670C28008D13A1 /* LoginResponse.swift */,
+				412A212A2B670C34008D13A1 /* LoginRequest.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -266,6 +289,7 @@
 			isa = PBXGroup;
 			children = (
 				412A21202B66F1FE008D13A1 /* ViewExtension.swift */,
+				412A21302B674C21008D13A1 /* StringExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -387,13 +411,21 @@
 				41E783632B644ADA00328604 /* HomeView.swift in Sources */,
 				412A21212B66F1FE008D13A1 /* ViewExtension.swift in Sources */,
 				412A21062B6668C1008D13A1 /* Auth.swift in Sources */,
+				412A21252B670B81008D13A1 /* LoginViewModel.swift in Sources */,
 				412A210A2B666A8E008D13A1 /* KeychainItemAccessibility.swift in Sources */,
 				412A21092B666A8E008D13A1 /* KeychainWrapper.swift in Sources */,
+				412A21272B670BCF008D13A1 /* LoginAction.swift in Sources */,
+				412A212B2B670C34008D13A1 /* LoginRequest.swift in Sources */,
+				412A21232B6705AB008D13A1 /* LoginView.swift in Sources */,
 				412A211E2B66C27D008D13A1 /* ButtonModifier.swift in Sources */,
+				412A212F2B672110008D13A1 /* RootScreen.swift in Sources */,
+				412A21292B670C28008D13A1 /* LoginResponse.swift in Sources */,
 				41E783612B644ADA00328604 /* SliceitApp.swift in Sources */,
 				412A21172B66BEF0008D13A1 /* AboutUsResponse.swift in Sources */,
 				412A21022B6665F3008D13A1 /* APIConfig.swift in Sources */,
+				412A21312B674C21008D13A1 /* StringExtension.swift in Sources */,
 				412A210D2B666AF1008D13A1 /* Models.swift in Sources */,
+				412A212D2B671F3E008D13A1 /* ProfileView.swift in Sources */,
 				412A21152B66BEE7008D13A1 /* AboutUsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

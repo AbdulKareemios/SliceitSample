@@ -12,5 +12,5 @@ class APIConfig {
     
     static let shared = APIConfig()
     let scheme: String = "https"
-    let host: String = "76f417cf-bf4c-40df-81a5-fa9007ed4ab8.mock.pstmn.io" // Put your mock server url here
+    let host: String = "fa5d0b3a-de11-4de4-9da3-b51cdaa6b92d.mock.pstmn.io" // Put your mock server url here
 }
