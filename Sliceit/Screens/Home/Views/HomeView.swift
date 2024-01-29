@@ -10,9 +10,10 @@ import SwiftUI
 struct HomeView: View {
     
     @State private var showAboutUs = false
+    @State private var signinActive = false
     
     var body: some View {
-        //NavigationView {
+        NavigationView {
             VStack {
                 Image("dragonlogo")
                 .resizable()
@@ -23,33 +24,39 @@ struct HomeView: View {
                 
                 Text("Building the next-gen fintech")
                 Button(
-                    action: launchAboutUs,
+                    action: {
+                        showAboutUs.toggle()
+                    },
                     label: {
                         Text("About us")
                             .modifier(MainButton())
                     }
                 )
                 
-                Button(
-                    action: launchSignin,
-                    label: {
-                        Text("Sign in")
-                            .modifier(MainButton())
-                    }
-                )
+                NavigationLink(destination: LoginView(), isActive: $signinActive) {
+                    
+                    Button(
+                        action: {
+                            self.signinActive = true
+                        },
+                        label: {
+                            Text("Sign in")
+                                .modifier(MainButton())
+                        }
+                    )
+                }
             }
             .padding()
             .sheet(isPresented: $showAboutUs) {
                 AboutUsView()
             }
-//            .navigationTitle("")
-//            .navigationBarTitleDisplayMode(.large)
-//        }
+            
+        }
     }
     
     func launchAboutUs() {
         
-        showAboutUs.toggle()
+        
     }
     
     func launchSignin() {

@@ -12,7 +12,8 @@ enum APIError: String, Error {
     case response = "Response is not correct"
     case noInternet = "No Internet Connection"
     case unknown = "Unnknown Error"
+    case email = "Email formate is ot correct"
     
 
-    
 }
+

@@ -9,7 +9,7 @@ import SwiftUI
 
 
 struct MainButton: ViewModifier {
-    var color: Color = Color.blue
+    var color: Color = Color(red: 200/255, green: 57/255, blue: 148/255)
     
     func body(content: Content) -> some View {
         content
