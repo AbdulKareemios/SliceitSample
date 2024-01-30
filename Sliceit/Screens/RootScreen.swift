@@ -11,12 +11,12 @@ struct RootScreen: View {
     @EnvironmentObject var auth: Auth
     
     var body: some View {
-        if auth.loggedIn {
-            ProfileView()
-            
-        } else {
+        //if auth.loggedIn {
+            //ProfileView()
             HomeView()
-        }
+//        } else {
+//            HomeView()
+//        }
     }
 }
 
