@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct SliceitApp: App {
+    init() {
+        NetworkMonitor.shared.startMonitoring()
+    }
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootScreen()
+                .environmentObject(Auth.shared)
         }
     }
 }
