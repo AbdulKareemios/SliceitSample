@@ -11,6 +11,7 @@ struct HomeView: View {
     
     @State private var showAboutUs = false
     @State private var signinActive = false
+    @EnvironmentObject var auth: Auth
     
     var body: some View {
         NavigationView {
@@ -51,7 +52,22 @@ struct HomeView: View {
                 AboutUsView()
             }
             
-        }
+        }.navigate(to: ProfileView(), when: $auth.loggedIn)
+//        if auth.loggedIn {
+//            NavigationLink(destination: ProfileView(), isActive: $auth.loggedIn) {
+//                
+//                Button(
+//                    action: {
+//                        self.signinActive = true
+//                    },
+//                    label: {
+//                        Text("Sign in")
+//                            .modifier(MainButton())
+//                    }
+//                )
+//            }
+//            
+//        }
     }
     
     func launchAboutUs() {

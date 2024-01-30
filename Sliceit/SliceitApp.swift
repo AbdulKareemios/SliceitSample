@@ -16,7 +16,6 @@ struct SliceitApp: App {
         WindowGroup {
             RootScreen()
                 .environmentObject(Auth.shared)
-                
         }
     }
 }
